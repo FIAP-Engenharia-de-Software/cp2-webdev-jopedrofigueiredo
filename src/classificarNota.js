@@ -9,8 +9,18 @@
 // - Retorna `"Nota inválida"` se for um valor fora de 0 a 10 ou não numérico.
 
 function classificarNota(nota) {
-  // TODO: implementar função
+  if (nota >= 6) {
+    return "aprovado"
+  }
+  if (nota < 6) {
+    return "Reprovado"
+  }
+  if (nota < 0 && nota > 10) {
+    return "Nota inválida"
+  }
 }
+
+classificarNota(8);
 
 //NÃO REMOVA O CÓDIGO ABAIXO
 module.exports = { classificarNota };
